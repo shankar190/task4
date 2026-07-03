@@ -1,0 +1,14 @@
+git init
+git add .
+git commit -m "Initial project setup"
+
+git checkout -b feature/readme
+
+git add README.md
+git commit -m "Add README documentation"
+
+git checkout main
+git merge feature/readme
+
+git remote add origin https://github.com/<your-username>/task4-git-devops.git
+git push -u origin main
